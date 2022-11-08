@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Seasonal rates</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+        
+<header class="header header--border">
+  <div class="container">
+    <!-- header__inner--nomenu - если нет меню -->
+    <div class="header__inner">
+      <div class="header__left">
+        <a href="/index.html" class="header__logo">Logo</a>
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="cabinet-host-dashboard.html" class="nav__link active"
+              >Now</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-listing.html" class="nav__link">Listing</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-bookings.html" class="nav__link">Bookings</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-calendar.html" class="nav__link">Calendar</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-transactions.html" class="nav__link"
+              >Transactions</a
+            >
+          </li>
+          <li class="nav__item nav__item--menu">
+            <div class="nav__link">
+              Menu
+              <svg class="nav__svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+
+            <div class="nav__dropdown dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="cabinet-host-channel.html" class="dropdown__link"
+                    >Channel Manager</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-rates.html" class="dropdown__link"
+                    >Seasonal rates</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-reviews.html" class="dropdown__link"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="websites.html" class="dropdown__link">Websites</a>
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="cabinet-host-opportunities.html"
+                    class="dropdown__link"
+                    >Opportunities</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <a href="#" class="header__question">Are you a host?</a>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#notifications"></use>
+            </svg>
+          </button>
+          <!-- active - для активного состояния -->
+          <div class="header__notifications notifications">
+            <div class="notifications__wrapper">
+              <div class="notifications__top">
+                <h3 class="notifications__head">Notifications</h3>
+                <span class="notifications__count">3</span>
+              </div>
+              <div class="notifications__bottom">
+                <div class="notifications__new">
+                  <ul class="notifications__list">
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing. Add your work email
+                          to unlock extra perks for business trips, like
+                          simplified expensing. Add your work email to unlock
+                          extra perks for business trips, like simplified
+                          expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notifications__old">
+                  <h4 class="notifications__previous">
+                    Previous notifications
+                  </h4>
+                  <ul class="notifications__list">
+                    <li class="notifications__item">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__count">10</span>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#message"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Пользователь без аватарки и не зарегистрирован -->
+        <div class="header__unit" style="display: none">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#account"></use>
+            </svg>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="log-in.html" class="dropdown__link">Log In</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Register</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <div class="header__avatar">
+              <img class="img-circle" src="img/avatar.png" alt="" />
+            </div>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">My bookings</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Favorites</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Account</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="cabinet-host rates">
+  <div class="container">
+    <div class="cabinet-host__inner">
+      <div class="cabinet-host__top">
+        <h1 class="cabinet-host__title title">Seasonal rates</h1>
+      </div>
+      <div class="cabinet-host__functional">
+        <div class="cabinet-host__left">
+          <p class="rates__text">
+            Seasonal rates are rates that differ from your base rate. They give
+            you the flexibility to offer different pricing for specific periods
+            of time, such as peak, shoulder, and off-season. They can also be
+            used for the weekends, holidays, or specific events in your market.
+          </p>
+        </div>
+
+        <div class="cabinet-host__right">
+          <!-- active - для активного состояния -->
+          <div class="cabinet-host__listings-drop listings-drop ">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Listing</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rates__content">
+        <ul class="rates__list">
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+          <li class="rates__item rates-block">
+            <div class="rates-block__top">
+              <div class="rates-block__info">
+                <div class="rates-block__head">7 nights or more</div>
+                <p class="rates-block__description">
+                  8% discount for stays of 7 nights or more
+                </p>
+              </div>
+              <button class="rates-block__remove btn">
+                <svg class="rates-block__remove-svg">
+                  <use xlink:href="img/sprites.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="rates-block__bottom">
+              <svg class="rates-block__bottom-svg">
+                <use xlink:href="img/sprites.svg#sale"></use>
+              </svg>
+              <button class="btn btn--grey">Edit</button>
+            </div>
+          </li>
+        </ul>
+        <div class="rates__buttons">
+          <button class="rates__btn btn btn--middle btn--blue">
+            + Add seasonal price rules
+          </button>
+          <button class="rates__btn btn btn--middle btn--transparent">
+            I don’t have seasonal rates
+          </button>
+        </div>
+        <div class="rates__help">
+          <h4 class="rates__head">Need help?</h4>
+          <p class="rates__description">
+            We are always happy to make your ads as high quality and complete as
+            possible. If you need help filling in the information about special
+            rates, you can contact our specialists for help.
+          </p>
+          <a href="#" class="rates__link link link--blue"
+            >Contact our specialist</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__cop">© 2022 Company’s name</span>
+    </div>
+    <div class="footer__center">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            Support & resources
+            <svg class="footer__link-arrow">
+              <use xlink:href="img/sprites.svg#arrow-down"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link">$ USD</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <div class="modal seasonal-price ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">Seasonal price rules</h3>
+        <p class="modal__description">
+          Adjust your base rates and rules for certain periods by adding
+          Seasonal price changes.
+        </p>
+        <button class="modal__close btn btn--circle">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__main">
+        <form class="seasonal-price__main form">
+          <div class="seasonal-price__block">
+            <h4 class="seasonal-price__head">
+              Price rules type
+            </h4>
+            <div class="seasonal-price__wrapper">
+              <div class="seasonal-price__item">
+                <div class="seasonal-price__radio radio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="seasonal-price-1"
+                    id="seasonal-price-1"
+                    checked
+                  />
+                  <label for="seasonal-price-1" class="radio__label"
+                    >I want to make a discount</label
+                  >
+                </div>
+                <label class="form__label ">
+                  <input type="text" class="form__input" placeholder="12" />
+                </label>
+              </div>
+              <div class="seasonal-price__item">
+                <div class="seasonal-price__radio radio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="seasonal-price-1"
+                    id="seasonal-price-2"
+                  />
+                  <label for="seasonal-price-2" class="radio__label"
+                    >I want to mark up</label
+                  >
+                </div>
+                <label class="form__label">
+                  <input type="text" class="form__input" placeholder="0" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="seasonal-price__block">
+            <h4 class="seasonal-price__head">
+              Information
+            </h4>
+            <div class="seasonal-price__wrapper">
+              <label class="form__label form__label--long form__label--error">
+                <span class="form__span">Season name</span>
+                <input type="text" class="form__input" />
+              </label>
+              <label class="form__label">
+                <span class="form__span">Start date</span>
+                <input type="text" class="form__input" />
+              </label>
+              <label class="form__label">
+                <span class="form__span">End date</span>
+                <input type="text" class="form__input" />
+              </label>
+              <div class="select select--error">
+                <div class="select__toggle">
+                  <div class="select__field">
+                    <span class="select__text">Minimum stay</span>
+                  </div>
+                  <svg class="select__svg">
+                    <use xlink:href="img/sprites.svg#arrow-down"></use>
+                  </svg>
+                </div>
+                <div class="select__dropdown">
+                  <div class="select__result">
+                    <ul class="select__options">
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="select__recent">
+                    <h3 class="select__title">Recent research</h3>
+                    <ul class="select__options">
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="select">
+                <div class="select__toggle">
+                  <div class="select__field">
+                    <span class="select__text">Maximum stay</span>
+                  </div>
+                  <svg class="select__svg">
+                    <use xlink:href="img/sprites.svg#arrow-down"></use>
+                  </svg>
+                </div>
+                <div class="select__dropdown">
+                  <div class="select__result">
+                    <ul class="select__options">
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="select__recent">
+                    <h3 class="select__title">Recent research</h3>
+                    <ul class="select__options">
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                      <li class="select__item">
+                        <span class="select__option">Greece</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seasonal-price__block">
+            <h4 class="seasonal-price__head">
+              Check-in days
+            </h4>
+            <div class="check-days">
+              <ul class="check-days__list">
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle active"
+                  >
+                    Sun
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle active"
+                  >
+                    Mon
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Tue
+                  </button>
+                </li>
+
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Wed
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Thu
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Fri
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Sat
+                  </button>
+                </li>
+              </ul>
+              <div class="check-days__radio radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="pay"
+                  id="seasonal-price-3"
+                />
+                <label for="seasonal-price-3" class="radio__label"
+                  >Anyday</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="seasonal-price__block">
+            <h4 class="seasonal-price__head">
+              Check-out days
+            </h4>
+            <div class="check-days">
+              <ul class="check-days__list">
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle active"
+                  >
+                    Sun
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle active"
+                  >
+                    Mon
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Tue
+                  </button>
+                </li>
+
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Wed
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Thu
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Fri
+                  </button>
+                </li>
+                <li class="check-days__item">
+                  <!-- active - для активного состояния -->
+                  <button
+                    type="button"
+                    class="check-days__btn btn btn--circle "
+                  >
+                    Sat
+                  </button>
+                </li>
+              </ul>
+              <div class="check-days__radio radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="pay"
+                  id="seasonal-price-3"
+                />
+                <label for="seasonal-price-3" class="radio__label"
+                  >Anyday</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="seasonal-price__block">
+            <div class="seasonal-price__container">
+              <div class="seasonal-price__radio radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="seasonal-price-5"
+                  id="seasonal-price-5"
+                />
+                <label for="seasonal-price-5" class="radio__label"
+                  >Allow combination with Longer stay discount</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="seasonal-price__buttons">
+            <button type="button" class="btn btn--grey">Back</button>
+            <button type="submit" class="btn btn--blue">OK</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/libs/simple-bar.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/input.js"></script>
+  </body>
+</html>

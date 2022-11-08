@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Calendar</title>
+
+
+    <!--  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        
+<header class="header header--border">
+  <div class="container">
+    <!-- header__inner--nomenu - если нет меню -->
+    <div class="header__inner">
+      <div class="header__left">
+        <a href="/index.html" class="header__logo">Logo</a>
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="cabinet-host-dashboard.html" class="nav__link active"
+              >Now</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-listing.html" class="nav__link">Listing</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-bookings.html" class="nav__link">Bookings</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-calendar.html" class="nav__link">Calendar</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-transactions.html" class="nav__link"
+              >Transactions</a
+            >
+          </li>
+          <li class="nav__item nav__item--menu">
+            <div class="nav__link">
+              Menu
+              <svg class="nav__svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+
+            <div class="nav__dropdown dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="cabinet-host-channel.html" class="dropdown__link"
+                    >Channel Manager</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-rates.html" class="dropdown__link"
+                    >Seasonal rates</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-reviews.html" class="dropdown__link"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="websites.html" class="dropdown__link">Websites</a>
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="cabinet-host-opportunities.html"
+                    class="dropdown__link"
+                    >Opportunities</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <a href="#" class="header__question">Are you a host?</a>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#notifications"></use>
+            </svg>
+          </button>
+          <!-- active - для активного состояния -->
+          <div class="header__notifications notifications">
+            <div class="notifications__wrapper">
+              <div class="notifications__top">
+                <h3 class="notifications__head">Notifications</h3>
+                <span class="notifications__count">3</span>
+              </div>
+              <div class="notifications__bottom">
+                <div class="notifications__new">
+                  <ul class="notifications__list">
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing. Add your work email
+                          to unlock extra perks for business trips, like
+                          simplified expensing. Add your work email to unlock
+                          extra perks for business trips, like simplified
+                          expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notifications__old">
+                  <h4 class="notifications__previous">
+                    Previous notifications
+                  </h4>
+                  <ul class="notifications__list">
+                    <li class="notifications__item">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__count">10</span>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#message"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Пользователь без аватарки и не зарегистрирован -->
+        <div class="header__unit" style="display: none">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#account"></use>
+            </svg>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="log-in.html" class="dropdown__link">Log In</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Register</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <div class="header__avatar">
+              <img class="img-circle" src="img/avatar.png" alt="" />
+            </div>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">My bookings</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Favorites</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Account</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="cabinet-host calendar">
+  <div class="container">
+    <div class="cabinet-host__inner">
+      <div class="cabinet-host__top">
+        <div class="cabinet-host__right">
+          <div class="calendar__listings listings-drop">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Listing</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button href="#" class="btn btn--blue">
+            Synchronise calendar
+          </button>
+        </div>
+      </div>
+      <div class="calendar__wrapper">
+        <div id="calendar"></div>
+        <div class="calendar__right">
+          <div class="calendar__accordion">
+            <div class="calendar__top">
+              <h3 class="calendar__head">Today</h3>
+              <span class="calendar__date">August 2, 2022</span>
+            </div>
+            <div class="calendar__content" data-simplebar>
+              <div class="calendar__block">
+                <h4 class="calendar__caption">Busy</h4>
+                <ul class="calendar__list">
+                  <li class="calendar__item calendar-item calendar-item--open">
+                    <div class="calendar-item__top">
+                      <div class="calendar-item__about">
+                        <div class="calendar-item__image">
+                          <img src="img/card.jpg" alt="" />
+                        </div>
+                        <div class="calendar-item__info">
+                          <h5 class="calendar-item__head">
+                            LUX | The La Mer Sea View Suite 4
+                          </h5>
+                          <p class="calendar-item__description">
+                            Dubai, United Arab Emirates
+                          </p>
+                        </div>
+                      </div>
+                      <button class="calendar-item__btn btn btn--circle">
+                        <svg class="calendar-item__btn-svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="calendar-item__bottom">
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Guests</div>
+                          <div class="calendar-item__content">2 guests</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Days</div>
+                          <div class="calendar-item__content">7 nights</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Status</div>
+                          <div class="calendar-item__content">
+														<!-- 
+															status--green
+															status--yellow
+															status--red
+														 -->
+                            <div class="status status--green">
+                              <svg class="status__svg">
+                                <use
+                                  xlink:href="img/sprites.svg#check-fill"
+                                ></use>
+                              </svg>
+                              Paid
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Sum</div>
+                          <div class="calendar-item__content">$ 1813,13</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Who booked</div>
+                          <div class="calendar-item__broked">
+                            <div class="calendar-item__avatar">
+                              <img
+                                class="img-circle"
+                                src="img/avatar.png"
+                                alt=""
+                              />
+                            </div>
+                            <span class="calendar-item__name"
+                              >Jessika Hilbert</span
+                            >
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Phone</div>
+                          <div class="calendar-item__content">
+                            +41 050 455 78
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Children</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Pets</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-in</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >31/07/2022</span
+                            >
+                            <span class="calendar-item__date-time">14:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-out</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >04/08/2022</span
+                            >
+                            <span class="calendar-item__date-time">09:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Channel</div>
+                          <div class="calendar-item__logo">
+                            <img src="img/channels/airbnb.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar__item calendar-item ">
+                    <div class="calendar-item__top">
+                      <div class="calendar-item__about">
+                        <div class="calendar-item__image">
+                          <img src="img/card.jpg" alt="" />
+                        </div>
+                        <div class="calendar-item__info">
+                          <h5 class="calendar-item__head">
+                            LUX | The La Mer Sea View Suite 4
+                          </h5>
+                          <p class="calendar-item__description">
+                            Dubai, United Arab Emirates
+                          </p>
+                        </div>
+                      </div>
+                      <button class="calendar-item__btn btn btn--circle">
+                        <svg class="calendar-item__btn-svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="calendar-item__bottom">
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Guests</div>
+                          <div class="calendar-item__content">2 guests</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Days</div>
+                          <div class="calendar-item__content">7 nights</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Status</div>
+                          <div class="calendar-item__content">
+                            <div class="status status--green">Paid</div>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Sum</div>
+                          <div class="calendar-item__content">$ 1813,13</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Who booked</div>
+                          <div class="calendar-item__broked">
+                            <div class="calendar-item__avatar">
+                              <img
+                                class="img-circle"
+                                src="img/avatar.png"
+                                alt=""
+                              />
+                            </div>
+                            <span class="calendar-item__name"
+                              >Jessika Hilbert</span
+                            >
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Phone</div>
+                          <div class="calendar-item__content">
+                            +41 050 455 78
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Children</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Pets</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-in</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >31/07/2022</span
+                            >
+                            <span class="calendar-item__date-time">14:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-out</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >04/08/2022</span
+                            >
+                            <span class="calendar-item__date-time">09:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Channel</div>
+                          <div class="calendar-item__logo">
+                            <img src="img/channels/airbnb.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar__item calendar-item ">
+                    <div class="calendar-item__top">
+                      <div class="calendar-item__about">
+                        <div class="calendar-item__image">
+                          <img src="img/card.jpg" alt="" />
+                        </div>
+                        <div class="calendar-item__info">
+                          <h5 class="calendar-item__head">
+                            LUX | The La Mer Sea View Suite 4
+                          </h5>
+                          <p class="calendar-item__description">
+                            Dubai, United Arab Emirates
+                          </p>
+                        </div>
+                      </div>
+                      <button class="calendar-item__btn btn btn--circle">
+                        <svg class="calendar-item__btn-svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="calendar-item__bottom">
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Guests</div>
+                          <div class="calendar-item__content">2 guests</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Days</div>
+                          <div class="calendar-item__content">7 nights</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Status</div>
+                          <div class="calendar-item__content">
+                            <div class="status status--green">Paid</div>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Sum</div>
+                          <div class="calendar-item__content">$ 1813,13</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Who booked</div>
+                          <div class="calendar-item__broked">
+                            <div class="calendar-item__avatar">
+                              <img
+                                class="img-circle"
+                                src="img/avatar.png"
+                                alt=""
+                              />
+                            </div>
+                            <span class="calendar-item__name"
+                              >Jessika Hilbert</span
+                            >
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Phone</div>
+                          <div class="calendar-item__content">
+                            +41 050 455 78
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Children</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Pets</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-in</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >31/07/2022</span
+                            >
+                            <span class="calendar-item__date-time">14:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-out</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >04/08/2022</span
+                            >
+                            <span class="calendar-item__date-time">09:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Channel</div>
+                          <div class="calendar-item__logo">
+                            <img src="img/channels/airbnb.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar__item calendar-item ">
+                    <div class="calendar-item__top">
+                      <div class="calendar-item__about">
+                        <div class="calendar-item__image">
+                          <img src="img/card.jpg" alt="" />
+                        </div>
+                        <div class="calendar-item__info">
+                          <h5 class="calendar-item__head">
+                            LUX | The La Mer Sea View Suite 4
+                          </h5>
+                          <p class="calendar-item__description">
+                            Dubai, United Arab Emirates
+                          </p>
+                        </div>
+                      </div>
+                      <button class="calendar-item__btn btn btn--circle">
+                        <svg class="calendar-item__btn-svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="calendar-item__bottom">
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Guests</div>
+                          <div class="calendar-item__content">2 guests</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Days</div>
+                          <div class="calendar-item__content">7 nights</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Status</div>
+                          <div class="calendar-item__content">
+                            <div class="status status--green">Paid</div>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Sum</div>
+                          <div class="calendar-item__content">$ 1813,13</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Who booked</div>
+                          <div class="calendar-item__broked">
+                            <div class="calendar-item__avatar">
+                              <img
+                                class="img-circle"
+                                src="img/avatar.png"
+                                alt=""
+                              />
+                            </div>
+                            <span class="calendar-item__name"
+                              >Jessika Hilbert</span
+                            >
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Phone</div>
+                          <div class="calendar-item__content">
+                            +41 050 455 78
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Children</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Pets</div>
+                          <div class="calendar-item__content">No</div>
+                        </div>
+                      </div>
+                      <div class="calendar-item__block">
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-in</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >31/07/2022</span
+                            >
+                            <span class="calendar-item__date-time">14:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Check-out</div>
+                          <div class="calendar-item__date">
+                            <span class="calendar-item__date-numbers"
+                              >04/08/2022</span
+                            >
+                            <span class="calendar-item__date-time">09:00</span>
+                          </div>
+                        </div>
+                        <div class="calendar-item__unit">
+                          <div class="calendar-item__title">Channel</div>
+                          <div class="calendar-item__logo">
+                            <img src="img/channels/airbnb.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="calendar__block">
+                <h4 class="calendar__caption">Moving in soon</h4>
+                <ul class="calendar__list">
+                  <li class="calendar__item calendar-item ">
+                    <div class="calendar-item__top">
+                      <div class="calendar-item__about">
+                        <div class="calendar-item__image">
+                          <img src="img/card.jpg" alt="" />
+                        </div>
+                        <div class="calendar-item__info">
+                          <h5 class="calendar-item__head">
+                            Entire 1BR Premium JLT Apt
+                          </h5>
+                          <p class="calendar-item__description">
+                            Dubai, United Arab Emirates
+                          </p>
+                        </div>
+                      </div>
+                      <button class="calendar-item__btn btn btn--circle">
+                        <svg class="calendar-item__btn-svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="calendar-item__bottom"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
+            <div class="calendar__setting" style="display: none;">
+              <p class="calendar__text">
+                You don't have any upcoming bookings yet
+              </p>
+              <button class="btn btn--blue">Add manual booking</button>
+            </div>
+          </div>
+          <div class="calendar__help">
+            <h4 class="calendar__title">How to get more bookings?</h4>
+            <ul class="calendar__lines">
+              <li class="calendar__line">
+                <a href="#" class="calendar__link link link--blue">
+                  How to post listing the right way?</a
+                >
+              </li>
+              <li class="calendar__line">
+                <a href="#" class="calendar__link link link--blue">
+                  How to connect channels for listing?</a
+                >
+              </li>
+              <li class="calendar__line">
+                <a href="#" class="calendar__link link link--blue">
+                  Set up listing rates</a
+                >
+              </li>
+              <li class="calendar__line">
+                <a href="#" class="calendar__link link link--blue">
+                  How to connect channels for listing?</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__cop">© 2022 Company’s name</span>
+    </div>
+    <div class="footer__center">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            Support & resources
+            <svg class="footer__link-arrow">
+              <use xlink:href="img/sprites.svg#arrow-down"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link">$ USD</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <div class="modal manual-booking ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">Booking from August 10 to August 16</h3>
+        <button class="modal__close btn btn--circle">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__main">
+        <form class="manual-booking__form form">
+          <div class="manual-booking__top">
+            <label class="form__label">
+              <span class="form__span">Check-in date</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label">
+              <span class="form__span">Check-out date</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label">
+              <span class="form__span">First name</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label">
+              <span class="form__span">Last name</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label">
+              <span class="form__span">Email</span>
+              <input type="email" class="form__input" />
+            </label>
+            <label class="form__label active valid form__label--on">
+              <span class="form__span">Phone number</span>
+              <div class="form__drop">
+                <!--active для активного состояния  -->
+                <div class="form__flags flags">
+                  <div class="flags__top">
+                    <img src="img/flags/swiss.png" alt="" />
+                    <svg class="flags__top-svg">
+                      <use xlink:href="img/sprites.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <ul class="flags__list" data-simplebar>
+                    <li class="flags__item">
+                      <div class="flags__left">
+                        <img
+                          src="img/flags/swiss.png"
+                          class="flags__img"
+                          alt=""
+                        />
+                        <span class="flags__name">Swiss</span>
+                      </div>
+                      <span class="flags__number">+41</span>
+                    </li>
+                    <li class="flags__item">
+                      <div class="flags__left">
+                        <img
+                          src="img/flags/american.png"
+                          class="flags__img"
+                          alt=""
+                        />
+                        <span class="flags__name">American English</span>
+                      </div>
+                      <span class="flags__number">+41</span>
+                    </li>
+                    <li class="flags__item">
+                      <div class="flags__left">
+                        <img src="img/flags/uk.png" class="flags__img" alt="" />
+                        <span class="flags__name">UK English</span>
+                      </div>
+                      <span class="flags__number">+41</span>
+                    </li>
+                    <li class="flags__item">
+                      <div class="flags__left">
+                        <img
+                          src="img/flags/arabic.png"
+                          class="flags__img"
+                          alt=""
+                        />
+                        <span class="flags__name">Arabic</span>
+                      </div>
+                      <span class="flags__number">+41</span>
+                    </li>
+                    <li class="flags__item">
+                      <div class="flags__left">
+                        <img src="img/flags/uk.png" class="flags__img" alt="" />
+                        <span class="flags__name">UK English</span>
+                      </div>
+                      <span class="flags__number">+41</span>
+                    </li>
+                    <li class="flags__item">
+                      <div class="flags__left">
+                        <img
+                          src="img/flags/arabic.png"
+                          class="flags__img"
+                          alt=""
+                        />
+                        <span class="flags__name">Arabic</span>
+                      </div>
+                      <span class="flags__number">+41</span>
+                    </li>
+                  </ul>
+                </div>
+                <input type="text" class="form__input" value="+41 456 46 46" />
+              </div>
+            </label>
+            <label class="form__label form__label--long form__label--textarea">
+              <span class="form__span">Private notes</span>
+              <textarea class="form__area"></textarea>
+            </label>
+          </div>
+          <div class="manual-booking__bottom">
+            <button type="button" class="manual-booking__close btn btn--grey">
+              Close
+            </button>
+            <button type="submit" class="manual-booking__close btn btn--blue">
+              OK
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal block-dates ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">Block dates from August 29 to August 31</h3>
+        <button class="modal__close btn btn--circle">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__main">
+        <form class="block-dates__form form">
+          <div class="block-dates__top">
+            <label class="form__label">
+              <span class="form__span">Check-in date</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label">
+              <span class="form__span">Check-out date</span>
+              <input type="text" class="form__input" />
+            </label>
+
+            <label class="form__label form__label--long form__label--textarea">
+              <span class="form__span">Private notes</span>
+              <textarea class="form__area"></textarea>
+            </label>
+          </div>
+          <div class="block-dates__bottom">
+            <button type="button" class="block-dates__close btn btn--grey">
+              Close
+            </button>
+            <button type="submit" class="block-dates__close btn btn--blue">
+              OK
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal custom-rate ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">Booking from August 27 to August 28</h3>
+        <p class="modal__description">
+          Fill in the fields below and write your question
+        </p>
+        <button class="modal__close btn btn--circle">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__main">
+        <form class="custom-rate__form form">
+          <div class="custom-rate__top">
+            <label class="form__label">
+              <span class="form__span">Check-in date</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label">
+              <span class="form__span">Check-out date</span>
+              <input type="text" class="form__input" />
+            </label>
+            <label class="form__label active">
+              <span class="form__span">Custom rate for each night</span>
+              <input type="text" class="form__input" value="€ 140 " />
+            </label>
+            <span class="custom-rate__span"
+              >Your current basic rate is from € 120.00</span
+            >
+            <label class="form__label form__label--long form__label--textarea">
+              <span class="form__span">Private notes</span>
+              <textarea class="form__area"></textarea>
+            </label>
+          </div>
+
+          <div class="custom-rate__bottom">
+            <h3 class="custom-rate__head">
+              Apply this custom rate to other listings
+            </h3>
+            <div class="custom-rate__select select ">
+              <div class="select__toggle">
+                <div class="select__field">
+                  <span class="select__text">Location</span>
+                </div>
+                <svg class="select__svg">
+                  <use xlink:href="img/sprites.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <div class="select__dropdown">
+                <div class="select__result">
+                  <ul class="select__options">
+                    <li class="select__item">
+                      <span class="select__option">Greece</span>
+                    </li>
+                    <li class="select__item">
+                      <span class="select__option">Greece</span>
+                    </li>
+                    <li class="select__item">
+                      <span class="select__option">Greece</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="select__recent">
+                  <h3 class="select__title">Recent research</h3>
+                  <ul class="select__options">
+                    <li class="select__item">
+                      <span class="select__option">Greece</span>
+                    </li>
+                    <li class="select__item">
+                      <span class="select__option">Greece</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="custom-rate__buttons">
+              <button type="button" class="custom-rate__close btn btn--grey">
+                Close
+              </button>
+              <button type="submit" class="custom-rate__close btn btn--blue">
+                OK
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Syncronize calendar  -->
+      <div class="modal syncronize-calendar ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">Getting started with Calendar Sync</h3>
+        <p class="modal__description">
+          Even when you have published your property via Your.Rentals, you might
+          still have one or more existing calendars that you are actively
+          managing. By automatically synchronising all your calendars you’ll
+          prevent multiple guests booking the same dates, and it saves you time
+          as everything can be managed from one place.
+        </p>
+        <p class="modal__description">
+          In just a few steps we will help you set up a calendar sync for your
+          listing, after which your calendar will be updated automatically.
+        </p>
+        <button class="modal__close btn btn--circle ">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__main">
+        <div class="syncronize-calendar__main">
+          <h4 class="syncronize-calendar__head">
+            How do you currently manage your calendar for this property?
+          </h4>
+
+          <div class="syncronize-calendar__radio radio">
+            <input
+              class="radio__input"
+              type="radio"
+              name="syncronize-calendar"
+              id="syncronize-calendar"
+              checked
+            />
+            <label for="syncronize-calendar" class="radio__label"
+              >I already manage a calendar <br />
+              on one or more channels, such as Airbnb</label
+            >
+          </div>
+          <div class="syncronize-calendar__radio radio">
+            <input
+              class="radio__input"
+              type="radio"
+              name="syncronize-calendar"
+              id="syncronize-calendar"
+              checked
+            />
+            <label for="syncronize-calendar" class="radio__label"
+              >My Your.Rentals calendar is my main calendar, and <br />
+              I don’t have an existing one</label
+            >
+          </div>
+          <div class="syncronize-calendar__buttons">
+            <button class="syncronize-calendar__close btn btn--grey">
+              Close
+            </button>
+            <button class="syncronize-calendar__next btn btn--blue">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal syncronize-calendar ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">
+          You’re all set to start adding dates to your calendar!
+        </h3>
+
+        <button class="modal__close btn btn--circle ">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__main">
+        <div class="syncronize-calendar__main">
+          <div class="syncronize-calendar__description">
+            <p>
+              By using the Your.Rentals calendar as the main calendar for your
+              property, you only need to keep this calendar up-to-date. We’ll
+              ensure the availability is correct in all channels via
+              Your.Rentals.
+            </p>
+            <p>Click next to start adding dates to your property’s calendar.</p>
+          </div>
+          <div class="syncronize-calendar__buttons">
+            <button class="syncronize-calendar__close btn btn--grey">
+              Close
+            </button>
+            <button class="syncronize-calendar__next btn btn--blue">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal syncronize-calendar ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">
+          On which channels do you already manage an existing calendar for this
+          property?
+        </h3>
+
+        <button class="modal__close btn btn--circle ">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__main">
+        <div class="syncronize-calendar__main">
+          <ul class="syncronize-calendar__channels">
+            <li class="syncronize-calendar__channel">
+              <button class="syncronize-calendar__button">
+                <div class="syncronize-calendar__logo">
+                  <img src="img/channels/logo/1.png" alt="" />
+                </div>
+                <span class="syncronize-calendar__logo-name">Airbnb</span>
+              </button>
+            </li>
+            <li class="syncronize-calendar__channel">
+              <button class="syncronize-calendar__button">
+                <div class="syncronize-calendar__logo">
+                  <img src="img/channels/logo/2.png" alt="" />
+                </div>
+                <span class="syncronize-calendar__logo-name">Booking</span>
+              </button>
+            </li>
+            <li class="syncronize-calendar__channel">
+              <button class="syncronize-calendar__button">
+                <div class="syncronize-calendar__logo">
+                  <img src="img/channels/logo/3.png" alt="" />
+                </div>
+                <span class="syncronize-calendar__logo-name"
+                  >TripAdvisor Group</span
+                >
+              </button>
+            </li>
+            <li class="syncronize-calendar__channel">
+              <button class="syncronize-calendar__button">
+                <div class="syncronize-calendar__logo">
+                  <img src="img/channels/logo/4.png" alt="" />
+                </div>
+                <span class="syncronize-calendar__logo-name">Vrbo</span>
+              </button>
+            </li>
+            <li class="syncronize-calendar__channel">
+              <button class="syncronize-calendar__button">
+                <div class="syncronize-calendar__circle">
+                  <svg class="syncronize-calendar__circle-svg">
+                    <use xlink:href="img/sprites.svg#settings"></use>
+                  </svg>
+                </div>
+                <span class="syncronize-calendar__logo-name"
+                  >Other channels</span
+                >
+              </button>
+            </li>
+          </ul>
+          <div class="syncronize-calendar__buttons">
+            <button class="syncronize-calendar__close btn btn--grey">
+              Close
+            </button>
+            <button class="syncronize-calendar__next btn btn--blue">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal syncronize-calendar ">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">
+          Import your Airbnb calendar
+        </h3>
+
+        <button class="modal__close btn btn--circle ">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__main">
+        <div class="syncronize-calendar__main">
+          <div class="syncronize-calendar__template" style="display: none;">
+            <div class="syncronize-calendar__image">
+              <img src="img/calendar/1.jpg" alt="" />
+            </div>
+            <p class="syncronize-calendar__tip">
+              Login to your Airbnb account, and select "edit" on your listing
+              for which you want to export the calendar
+            </p>
+          </div>
+          <div class="syncronize-calendar__template" style="display: none;">
+            <div class="syncronize-calendar__image">
+              <img src="img/calendar/2.jpg" alt="" />
+            </div>
+            <p class="syncronize-calendar__tip">
+              In the Availability tab, scroll down to Sync calendars and choose
+              "export calendar"
+            </p>
+          </div>
+          <div class="syncronize-calendar__template">
+            <div class="syncronize-calendar__image">
+              <img src="img/calendar/3.jpg" alt="" />
+            </div>
+            <p class="syncronize-calendar__tip">
+              Copy the URL shown in the window, and paste this address in the
+              field below
+            </p>
+
+            <form class="syncronize-calendar__form form">
+              <div class="syncronize-calendar__wrapper">
+                <label class="form__label">
+                  <span class="form__span">Calendar address</span>
+                  <input type="text" class="form__input" />
+                </label>
+                <label class="form__label">
+                  <span class="form__span">Calendar name</span>
+                  <input type="text" class="form__input" />
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="syncronize-calendar__steps">
+            <div
+              class="syncronize-calendar__step syncronize-calendar__step--active"
+            >
+              <span class="syncronize-calendar__number">01</span>
+            </div>
+            <span class="syncronize-calendar__line "></span>
+            <div
+              class="syncronize-calendar__step syncronize-calendar__step--current"
+            >
+              <span class="syncronize-calendar__number">02</span>
+            </div>
+            <span class="syncronize-calendar__line"></span>
+            <div class="syncronize-calendar__step ">
+              <span class="syncronize-calendar__number ">03</span>
+            </div>
+          </div>
+
+          <div class="syncronize-calendar__buttons">
+            <button class="syncronize-calendar__close btn btn--grey">
+              Close
+            </button>
+            <button class="syncronize-calendar__next btn btn--blue">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal thanks">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <button class="modal__close btn btn--circle">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__main">
+        <div class="thanks__main">
+          <div class="thanks__wrapper">
+            <svg class="thanks__image">
+              <use xlink:href="img/sprites.svg#check-fill"></use>
+            </svg>
+            <h3 class="thanks__title">Ready!</h3>
+            <p class="thanks__description">
+              Your Airbnb calendar has been successfully synced.
+            </p>
+
+            <button class="thanks__btn btn btn--blue">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="modal syncronize-calendar">
+  <div class="modal__body">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__top">
+        <h3 class="modal__title">
+          Calendar overview
+        </h3>
+
+        <button class="modal__close btn btn--circle ">
+          <svg class="modal__close-svg">
+            <use xlink:href="img/sprites.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__main">
+        <div class="syncronize-calendar__main">
+          <div class="syncronize-calendar__block">
+            <div class="syncronize-calendar__thead syncronize-calendar--grid">
+              <span class="syncronize-calendar__label">Source</span>
+              <span class="syncronize-calendar__label">Calendar name</span>
+              <span class="syncronize-calendar__label">Last sync</span>
+            </div>
+            <div class="syncronize-calendar__tbody syncronize-calendar--grid">
+              <span class="syncronize-calendar__text">Airbnb</span>
+              <span class="syncronize-calendar__text">My Airbnb calendar</span>
+              <span class="syncronize-calendar__text"
+                >May 12, 2022 at 10:29</span
+              >
+            </div>
+          </div>
+          <button class="syncronize-calendar__add btn btn--blue">Add</button>
+          <div class="syncronize-calendar__important">
+            <div class="syncronize-calendar__headline">
+              <img src="img/icons/important.svg" alt="" />
+              <h3 class="syncronize-calendar__caption">Important</h3>
+            </div>
+            <p class="syncronize-calendar__info">
+              To make sure all calendars are up-to-date, you must ensure that
+              you establish a direct relationship between ALL calendars. Read
+              our guide on synchronising multiple calendars
+              <a href="#" class="link link--blue">here</a>.
+            </p>
+          </div>
+          <div class="syncronize-calendar__buttons">
+            <button class="syncronize-calendar__close btn btn--grey">
+              Close
+            </button>
+            <button class="syncronize-calendar__next btn btn--blue">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/libs/simple-bar.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/libs/simple-bar.js"></script>
+    <script src="js/input.js"></script>
+  </body>
+</html>

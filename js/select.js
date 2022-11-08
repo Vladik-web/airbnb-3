@@ -1,0 +1,1 @@
+const selectToggle=document.querySelectorAll(".select__toggle");selectToggle.forEach((e=>{e.addEventListener("click",(()=>{e.parentNode.classList.toggle("active")}))}));

@@ -1,0 +1,1 @@
+const labels=document.querySelectorAll(".form__label");labels&&labels.forEach((e=>{const l=e.querySelector(".form__input")||e.querySelector(".form__area");e.addEventListener("focusin",(()=>{e.classList.add("active")})),e.addEventListener("focusout",(()=>{0===l.value.length&&e.classList.remove("active")}))}));

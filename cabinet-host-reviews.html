@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Reviews</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+        
+<header class="header header--border">
+  <div class="container">
+    <!-- header__inner--nomenu - если нет меню -->
+    <div class="header__inner">
+      <div class="header__left">
+        <a href="/index.html" class="header__logo">Logo</a>
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="cabinet-host-dashboard.html" class="nav__link active"
+              >Now</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-listing.html" class="nav__link">Listing</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-bookings.html" class="nav__link">Bookings</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-calendar.html" class="nav__link">Calendar</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-transactions.html" class="nav__link"
+              >Transactions</a
+            >
+          </li>
+          <li class="nav__item nav__item--menu">
+            <div class="nav__link">
+              Menu
+              <svg class="nav__svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+
+            <div class="nav__dropdown dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="cabinet-host-channel.html" class="dropdown__link"
+                    >Channel Manager</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-rates.html" class="dropdown__link"
+                    >Seasonal rates</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-reviews.html" class="dropdown__link"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="websites.html" class="dropdown__link">Websites</a>
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="cabinet-host-opportunities.html"
+                    class="dropdown__link"
+                    >Opportunities</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <a href="#" class="header__question">Are you a host?</a>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#notifications"></use>
+            </svg>
+          </button>
+          <!-- active - для активного состояния -->
+          <div class="header__notifications notifications">
+            <div class="notifications__wrapper">
+              <div class="notifications__top">
+                <h3 class="notifications__head">Notifications</h3>
+                <span class="notifications__count">3</span>
+              </div>
+              <div class="notifications__bottom">
+                <div class="notifications__new">
+                  <ul class="notifications__list">
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing. Add your work email
+                          to unlock extra perks for business trips, like
+                          simplified expensing. Add your work email to unlock
+                          extra perks for business trips, like simplified
+                          expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notifications__old">
+                  <h4 class="notifications__previous">
+                    Previous notifications
+                  </h4>
+                  <ul class="notifications__list">
+                    <li class="notifications__item">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__count">10</span>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#message"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Пользователь без аватарки и не зарегистрирован -->
+        <div class="header__unit" style="display: none">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#account"></use>
+            </svg>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="log-in.html" class="dropdown__link">Log In</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Register</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <div class="header__avatar">
+              <img class="img-circle" src="img/avatar.png" alt="" />
+            </div>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">My bookings</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Favorites</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Account</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="cabinet-host reviews-host">
+  <div class="container">
+    <div class="cabinet-host__inner">
+      <div class="cabinet-host__top">
+        <h1 class="cabinet-host__title title">Reviews</h1>
+      </div>
+      <div class="cabinet-host__functional">
+        <div class="cabinet-host__left">
+          <div class="cabinet-host__tabs tabs">
+            <button class="tabs__btn">All</button>
+            <button class="tabs__btn active">
+              5
+              <svg>
+                <use xlink:href="img/sprites.svg#star"></use>
+              </svg>
+            </button>
+            <button class="tabs__btn ">
+              4
+              <svg>
+                <use xlink:href="img/sprites.svg#star"></use>
+              </svg>
+            </button>
+            <button class="tabs__btn ">
+              3
+              <svg>
+                <use xlink:href="img/sprites.svg#star"></use>
+              </svg>
+            </button>
+            <button class="tabs__btn ">
+              2
+              <svg>
+                <use xlink:href="img/sprites.svg#star"></use>
+              </svg>
+            </button>
+            <button class="tabs__btn ">
+              1
+              <svg>
+                <use xlink:href="img/sprites.svg#star"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="cabinet-host__right">
+          <!-- active - для активного состояния -->
+          <div class="cabinet-host__listings listings-drop">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">All listings</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-host__content">
+        <div class="reviews-host__left">
+          <ul class="reviews-host__list">
+            <li class="reviews-host__item reviews-item">
+              <div class="reviews-item__wrapper">
+                <div class="reviews-item__top">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__image">
+                      <img class="img-circle" src="img/avatar.png" alt="" />
+                    </div>
+                    <div class="reviews-item__bio">
+                      <div class="reviews-item__name">Emily Johnson</div>
+                      <div class="reviews-item__rating">
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#CED5DD">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="reviews-item__date">June 18, 2022</span>
+                </div>
+                <p class="reviews-item__content">
+                  A very nice place that lived up to expectations based on
+                  photos and communication prior to the stay. The location is
+                  absolutely superb, just a few minutes to Burj Khalifa. Meydan
+                  is a paradise for everyone who loves minimalistic.
+                </p>
+                <button class="reviews-item__reply btn btn--grey">Reply</button>
+              </div>
+            </li>
+            <li class="reviews-host__item reviews-item">
+              <div class="reviews-item__wrapper">
+                <div class="reviews-item__top">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__image">
+                      <img class="img-circle" src="img/avatar.png" alt="" />
+                    </div>
+                    <div class="reviews-item__bio">
+                      <div class="reviews-item__name">Emily Johnson</div>
+                      <div class="reviews-item__rating">
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#CED5DD">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="reviews-item__date">June 18, 2022</span>
+                </div>
+                <p class="reviews-item__content">
+                  If your ever deciding whether to stay at Sonder or not,
+                  believe me I was like you and I can tell you, you will not
+                  regret it, it was fantastic! The views are incredible, there’s
+                  a private gym, sauna, pool, beach and everything you need,
+                  it’s close to everything and there’s plenty of nice
+                  restaurants close by, there is always someone to help you, I
+                  would definitely recommend!
+                </p>
+                <button class="reviews-item__reply btn btn--grey">Reply</button>
+              </div>
+            </li>
+            <li class="reviews-host__item reviews-item">
+              <div class="reviews-item__wrapper">
+                <div class="reviews-item__top">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__image">
+                      <img class="img-circle" src="img/avatar.png" alt="" />
+                    </div>
+                    <div class="reviews-item__bio">
+                      <div class="reviews-item__name">Emily Johnson</div>
+                      <div class="reviews-item__rating">
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#3F85D7">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                        <svg class="reviews-item__rating-svg" fill="#CED5DD">
+                          <use xlink:href="img/sprites.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="reviews-item__date">June 18, 2022</span>
+                </div>
+                <p class="reviews-item__content">
+                  A very nice place that lived up to expectations based on
+                  photos and communication prior to the stay. The location is
+                  absolutely superb, just a few minutes to Burj Khalifa. Meydan
+                  is a paradise for everyone who loves minimalistic.
+                </p>
+                <button class="reviews-item__reply btn btn--grey">Reply</button>
+              </div>
+              <div class="reviews-item__block">
+                <div class="reviews-item__top">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__image">
+                      <img class="img-circle" src="img/avatar.png" alt="" />
+                    </div>
+                    <div class="reviews-item__bio">
+                      <div class="reviews-item__name">You</div>
+                    </div>
+                  </div>
+                  <span class="reviews-item__date">June 18, 2022</span>
+                </div>
+                <p class="reviews-item__content">
+                  A very nice place that lived up to expectations based on
+                  photos and communication prior to the stay. The location is
+                  absolutely superb, just a few minutes to Burj Khalifa. Meydan
+                  is a paradise for everyone who loves minimalistic.
+                </p>
+                <button class="reviews-item__reply btn btn--grey">Edit</button>
+              </div>
+              <div class="reviews-item__block">
+                <textarea
+                  class="reviews-item__textarea"
+                  placeholder="Write your answer"
+                ></textarea>
+                <button class="btn btn--grey">Send</button>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination">
+  <div class="pagination__inner">
+    <button class="pagination__btn btn btn--circle pagination__btn--prev">
+      <svg class="pagination__btn-svg">
+        <use xlink:href="img/sprites.svg#arrow-down"></use>
+      </svg>
+    </button>
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <!-- active - для активной страницы -->
+        <a href="#" class="pagination__link active">1</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">2</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">3</a>
+      </li>
+    </ul>
+    <button class="pagination__btn btn btn--circle pagination__btn--next">
+      <svg class="pagination__btn-svg">
+        <use xlink:href="img/sprites.svg#arrow-down"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+        </div>
+        <div class="reviews-host__right">
+          <div class="reviews-host__block rating-block">
+            <h3 class="rating-block__head">Customer reviews</h3>
+            <div class="rating-block__info">
+              <span class="rating-block__number">4,5</span>
+              <div class="rating-block__stars">
+                <svg class="rating-block__stars-svg">
+                  <use xlink:href="img/sprites.svg#star" fill="#3F85D7"></use>
+                </svg>
+                <svg class="rating-block__stars-svg">
+                  <use xlink:href="img/sprites.svg#star" fill="#3F85D7"></use>
+                </svg>
+                <svg class="rating-block__stars-svg">
+                  <use xlink:href="img/sprites.svg#star" fill="#3F85D7"></use>
+                </svg>
+                <svg class="rating-block__stars-svg">
+                  <use xlink:href="img/sprites.svg#star" fill="#3F85D7"></use>
+                </svg>
+                <svg class="rating-block__stars-svg">
+                  <use xlink:href="img/sprites.svg#star" fill="#CED5DD"></use>
+                </svg>
+              </div>
+              <span class="rating-block__reviews">120 reviews</span>
+            </div>
+            <div class="rating-block__statistics">
+              <ul class="rating-block__list">
+                <li class="rating-block__item">
+                  <span class="rating-block__span">5</span>
+                  <div class="rating-block__progress progress">
+                    <div class="progress__line" style="width: 63%;"></div>
+                  </div>
+                  <span class="rating-block__span">63%</span>
+                </li>
+                <li class="rating-block__item">
+                  <span class="rating-block__span">4</span>
+                  <div class="rating-block__progress progress">
+                    <div class="progress__line" style="width: 22%;"></div>
+                  </div>
+                  <span class="rating-block__span">22%</span>
+                </li>
+                <li class="rating-block__item">
+                  <span class="rating-block__span">3</span>
+                  <div class="rating-block__progress progress">
+                    <div class="progress__line" style="width: 7%;"></div>
+                  </div>
+                  <span class="rating-block__span">7%</span>
+                </li>
+                <li class="rating-block__item">
+                  <span class="rating-block__span">2</span>
+                  <div class="rating-block__progress progress">
+                    <div class="progress__line" style="width: 5%;"></div>
+                  </div>
+                  <span class="rating-block__span">5%</span>
+                </li>
+                <li class="rating-block__item">
+                  <span class="rating-block__span">1</span>
+                  <div class="rating-block__progress progress">
+                    <div class="progress__line" style="width: 3%;"></div>
+                  </div>
+                  <span class="rating-block__span">3%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__cop">© 2022 Company’s name</span>
+    </div>
+    <div class="footer__center">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            Support & resources
+            <svg class="footer__link-arrow">
+              <use xlink:href="img/sprites.svg#arrow-down"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link">$ USD</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/libs/simple-bar.js"></script>
+  </body>
+</html>

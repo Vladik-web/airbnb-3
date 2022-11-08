@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Bookings</title>
+
+    <link
+      href="https://unpkg.com/primevue@^3/resources/themes/saga-blue/theme.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/primevue@^3/resources/primevue.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/primeflex@^3/primeflex.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/primeicons/primeicons.css" rel="stylesheet" />
+
+    <!-- Dependencies -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/primevue@^3/core/core.min.js"></script>
+
+    <!-- Demo -->
+    <script src="https://unpkg.com/primevue@^3/calendar/calendar.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        
+<header class="header header--border">
+  <div class="container">
+    <!-- header__inner--nomenu - если нет меню -->
+    <div class="header__inner">
+      <div class="header__left">
+        <a href="/index.html" class="header__logo">Logo</a>
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="cabinet-host-dashboard.html" class="nav__link active"
+              >Now</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-listing.html" class="nav__link">Listing</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-bookings.html" class="nav__link">Bookings</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-calendar.html" class="nav__link">Calendar</a>
+          </li>
+          <li class="nav__item">
+            <a href="cabinet-host-transactions.html" class="nav__link"
+              >Transactions</a
+            >
+          </li>
+          <li class="nav__item nav__item--menu">
+            <div class="nav__link">
+              Menu
+              <svg class="nav__svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+
+            <div class="nav__dropdown dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="cabinet-host-channel.html" class="dropdown__link"
+                    >Channel Manager</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-rates.html" class="dropdown__link"
+                    >Seasonal rates</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="cabinet-host-reviews.html" class="dropdown__link"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="websites.html" class="dropdown__link">Websites</a>
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="cabinet-host-opportunities.html"
+                    class="dropdown__link"
+                    >Opportunities</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <a href="#" class="header__question">Are you a host?</a>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#notifications"></use>
+            </svg>
+          </button>
+          <!-- active - для активного состояния -->
+          <div class="header__notifications notifications">
+            <div class="notifications__wrapper">
+              <div class="notifications__top">
+                <h3 class="notifications__head">Notifications</h3>
+                <span class="notifications__count">3</span>
+              </div>
+              <div class="notifications__bottom">
+                <div class="notifications__new">
+                  <ul class="notifications__list">
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing. Add your work email
+                          to unlock extra perks for business trips, like
+                          simplified expensing. Add your work email to unlock
+                          extra perks for business trips, like simplified
+                          expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notifications__old">
+                  <h4 class="notifications__previous">
+                    Previous notifications
+                  </h4>
+                  <ul class="notifications__list">
+                    <li class="notifications__item">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__count">10</span>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#message"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Пользователь без аватарки и не зарегистрирован -->
+        <div class="header__unit" style="display: none">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#account"></use>
+            </svg>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="log-in.html" class="dropdown__link">Log In</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Register</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <div class="header__avatar">
+              <img class="img-circle" src="img/avatar.png" alt="" />
+            </div>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">My bookings</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Favorites</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Account</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="cabinet-host bookings">
+  <div class="container">
+    <div class="cabinet-host__inner">
+      <div class="cabinet-host__top">
+        <h1 class="cabinet-host__title title">Bookings</h1>
+        <a href="#" class="btn btn--blue" download="">Download CVS file</a>
+      </div>
+
+      <div class="bookings__content">
+        <div class="bookings__top bookings-grid">
+          <!-- menu -->
+          <div class="bookings__listings listings-drop">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">All listings</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__image">
+                    <img src="img/card-2.jpg" alt="" />
+                  </div>
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      Stylish loft apartment in the center of Dubai
+                    </div>
+                    <span class="listings-drop__type">Published</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Booking reference</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+              <span class="listings-drop__count">2</span>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Apartment 1</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Loft apartment 2</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Apartment 12</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Loft apartment 2</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Apartment 12</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Guest name</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Sasha</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Lola</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Vlad</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Petya</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Jeka</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Booking status</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Booked</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Canceled</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">
+                      In the process of returning
+                    </div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Payment not confirmed</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Paid</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Sales channels</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="listings-drop__bottom">
+              <ul class="listings-drop__list" data-simplebar>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Airbnb</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Agoda</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Atraveo</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Booking.com</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">E-domizil</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">HomeToGo</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">HyperGuest</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">Holidu</div>
+                  </div>
+                </li>
+                <li class="listings-drop__item">
+                  <div class="listings-drop__info">
+                    <div class="listings-drop__head">VRBO</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <p-calendar
+              v-model="date1"
+              autocomplete="off"
+              placeholder="Booking date"
+            >
+              <template #footer>
+                <div class="p-datepicker-footer">
+                  <span class="p-datepicker-span">Selected date</span>
+                  <span class="p-datepicker-data">01.06.2022</span>
+                </div>
+              </template>
+            </p-calendar>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <!-- <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Check-in date</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div> -->
+            <p-calendar
+              v-model="date2"
+              autocomplete="off"
+              placeholder="Booking date"
+            >
+              <template #footer>
+                <div class="p-datepicker-footer">
+                  <span class="p-datepicker-span">Selected date</span>
+                  <span class="p-datepicker-data">01.06.2022</span>
+                </div>
+              </template>
+            </p-calendar>
+          </div>
+          <div class="bookings__listings listings-drop listings-drop--default">
+            <!--  <div class="listings-drop__top">
+              <div class="listings-drop__top-label">Check-out date</div>
+              <svg class="listings-drop__top-svg">
+                <use xlink:href="img/sprites.svg#arrow-down"></use>
+              </svg>
+            </div> -->
+            <p-calendar
+              v-model="date3"
+              autocomplete="off"
+              placeholder="Booking date"
+            >
+              <template #footer>
+                <div class="p-datepicker-footer">
+                  <span class="p-datepicker-span">Selected date</span>
+                  <span class="p-datepicker-data">01.06.2022</span>
+                </div>
+              </template>
+            </p-calendar>
+          </div>
+        </div>
+        <!-- active - для активного состояния 
+				необходимо рассчитать свойство max-height
+				ceйчас указано 300px для примера появления фильтров
+				
+				-->
+        <div class="bookings__filters filters active">
+          <div class="filters__wrapper">
+            <button class="filters__reset btn btn--grey">Reset Filter</button>
+            <ul class="filters__units">
+              <li class="filters__unit">
+                Stylish loft apartments in the center of Dubai
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__unit">
+                Monika Hilbert
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__unit">
+                Robert Wright
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__unit">
+                Booked
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__unit">
+                Airbnb
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__unit">
+                Booking.com
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__unit">
+                25/06/2022
+                <button class="filters__unit-remove btn">
+                  <svg class="filters__unit-svg">
+                    <use xlink:href="img/sprites.svg#cross"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bookings__result">
+          <ul class="bookings__list">
+            <li class="bookings__item bookings-grid bookings-item">
+              <div class="bookings-item__info">
+                <div class="bookings-item__image">
+                  <img src="img/card.jpg" alt="" />
+                </div>
+                <div class="bookings-item__head">
+                  Stylish loft apartments in the center of Dubai
+                </div>
+              </div>
+              <div class="bookings-item__text">12</div>
+              <div class="bookings-item__text">Monika Hilbert</div>
+              <div class="bookings-item__text">Booked</div>
+              <div class="bookings-item__channel">
+                <img src="img/channels/airbnb.png" alt="" />
+              </div>
+              <div class="bookings-item__text">17/06/2022</div>
+              <div class="bookings-item__text">25/06/2022</div>
+              <div class="bookings-item__text">01/07/2022</div>
+            </li>
+            <li class="bookings__item bookings-grid bookings-item">
+              <div class="bookings-item__info">
+                <div class="bookings-item__image">
+                  <img src="img/card.jpg" alt="" />
+                </div>
+                <div class="bookings-item__head">
+                  Stylish loft apartments in the center of Dubai
+                </div>
+              </div>
+              <div class="bookings-item__text">10</div>
+              <div class="bookings-item__text">Robert Wright</div>
+              <div class="bookings-item__text">Booked</div>
+              <div class="bookings-item__channel">
+                <img src="img/channels/booking.png" alt="" />
+              </div>
+              <div class="bookings-item__text">17/06/2022</div>
+              <div class="bookings-item__text">25/06/2022</div>
+              <div class="bookings-item__text">01/07/2022</div>
+            </li>
+            <li class="bookings__item bookings-grid bookings-item">
+              <div class="bookings-item__info">
+                <div class="bookings-item__image">
+                  <img src="img/card.jpg" alt="" />
+                </div>
+                <div class="bookings-item__head">
+                  Stylish loft apartments in the center of Dubai
+                </div>
+              </div>
+              <div class="bookings-item__text">10</div>
+              <div class="bookings-item__text">Robert Wright</div>
+              <div class="bookings-item__text">Booked</div>
+              <div class="bookings-item__channel">
+                <img src="img/channels/booking.png" alt="" />
+              </div>
+              <div class="bookings-item__text">17/06/2022</div>
+              <div class="bookings-item__text">25/06/2022</div>
+              <div class="bookings-item__text">01/07/2022</div>
+            </li>
+            <li class="bookings__item bookings-grid bookings-item">
+              <div class="bookings-item__info">
+                <div class="bookings-item__image">
+                  <img src="img/card.jpg" alt="" />
+                </div>
+                <div class="bookings-item__head">
+                  Stylish loft apartments in the center of Dubai
+                </div>
+              </div>
+              <div class="bookings-item__text">10</div>
+              <div class="bookings-item__text">Robert Wright</div>
+              <div class="bookings-item__text">Booked</div>
+              <div class="bookings-item__channel">
+                <img src="img/channels/booking.png" alt="" />
+              </div>
+              <div class="bookings-item__text">17/06/2022</div>
+              <div class="bookings-item__text">25/06/2022</div>
+              <div class="bookings-item__text">01/07/2022</div>
+            </li>
+            <li class="bookings__item bookings-grid bookings-item">
+              <div class="bookings-item__info">
+                <div class="bookings-item__image">
+                  <img src="img/card.jpg" alt="" />
+                </div>
+                <div class="bookings-item__head">
+                  Stylish loft apartments in the center of Dubai
+                </div>
+              </div>
+              <div class="bookings-item__text">10</div>
+              <div class="bookings-item__text">Robert Wright</div>
+              <div class="bookings-item__text">Payment not confirmed</div>
+              <div class="bookings-item__channel">
+                <img src="img/channels/booking.png" alt="" />
+              </div>
+              <div class="bookings-item__text">17/06/2022</div>
+              <div class="bookings-item__text">25/06/2022</div>
+              <div class="bookings-item__text">01/07/2022</div>
+            </li>
+            <li class="bookings__item bookings-grid bookings-item">
+              <div class="bookings-item__info">
+                <div class="bookings-item__image">
+                  <img src="img/card.jpg" alt="" />
+                </div>
+                <div class="bookings-item__head">
+                  Stylish loft apartments in the center of Dubai
+                </div>
+              </div>
+              <div class="bookings-item__text">10</div>
+              <div class="bookings-item__text">Robert Wright</div>
+              <div class="bookings-item__text">In the process of returning</div>
+              <div class="bookings-item__channel">
+                <img src="img/channels/booking.png" alt="" />
+              </div>
+              <div class="bookings-item__text">17/06/2022</div>
+              <div class="bookings-item__text">25/06/2022</div>
+              <div class="bookings-item__text">01/07/2022</div>
+            </li>
+          </ul>
+        </div>
+        <!-- No results found -->
+        <div class="bookings__empty">
+          <h2 class="bookings__head">No results found</h2>
+          <p class="bookings__description">
+            We could’nt find any results that matched your filters and search
+            terms. Try a differnet search or reset all filters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__cop">© 2022 Company’s name</span>
+    </div>
+    <div class="footer__center">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            Support & resources
+            <svg class="footer__link-arrow">
+              <use xlink:href="img/sprites.svg#arrow-down"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link">$ USD</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/libs/simple-bar.js"></script>
+    <script type="module">
+      const { createApp, ref, computed } = Vue;
+
+      const App = {
+        setup() {
+          let today = new Date();
+          let month = today.getMonth();
+          let year = today.getFullYear();
+          let prevMonth = month === 0 ? 11 : month - 1;
+          let prevYear = prevMonth === 11 ? year - 1 : year;
+          let nextMonth = month === 11 ? 0 : month + 1;
+          let nextYear = nextMonth === 0 ? year + 1 : year;
+
+          const minDate = ref(new Date());
+          const maxDate = ref(new Date());
+          const invalidDates = ref();
+          const date1 = ref();
+          const date2 = ref();
+          const date3 = ref();
+
+          const responsiveOptions = ref([
+            {
+              breakpoint: "1400px",
+              numMonths: 2
+            },
+            {
+              breakpoint: "1200px",
+              numMonths: 1
+            }
+          ]);
+
+          minDate.value.setMonth(prevMonth);
+          minDate.value.setFullYear(prevYear);
+          maxDate.value.setMonth(nextMonth);
+          maxDate.value.setFullYear(nextYear);
+
+          let invalidDate = new Date();
+          invalidDate.setDate(today.getDate() - 1);
+          invalidDates.value = [today, invalidDate];
+
+          return {
+            minDate,
+            maxDate,
+            invalidDates,
+            date1,
+            date2,
+            date3
+          };
+        },
+        components: {
+          "p-calendar": primevue.calendar
+        }
+      };
+
+      createApp(App)
+        .use(primevue.config.default)
+        .mount(".wrapper");
+    </script>
+  </body>
+</html>

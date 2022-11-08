@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Главная</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+       
+<header class="header header--border">
+  <div class="container">
+    <!-- header__inner--nomenu - если нет меню -->
+    <div class="header__inner">
+      <div class="header__left">
+        <a href="/index.html" class="header__logo">Logo</a>
+      </div>
+      <div class="header__search search">
+        <div class="search__wrapper">
+          <form class="search__form form">
+            <div class="search__item">
+              <div class="search__top">
+                <span class="search__value">Greece</span>
+              </div>
+              <div class="search__bottom dropdown ">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <span class="dropdown__link">Greece</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <span class="dropdown__link">Thessaloniki, Greece</span>
+                  </li>
+                  <li class="dropdown__item">
+                    <span class="dropdown__link">Mikonos, Greece</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="search__item search__item--long">
+              <div class="search__top">
+                <span class="search__value">Greece</span>
+              </div>
+              <!-- active для активного состояния -->
+              <div class="search__pop-calendar pop-calendar ">
+                <div class="pop-calendar__wrapper ">
+                  <div class="pop-calendar__top tabs">
+                    <button type="button" class="tabs__btn active">
+                      Choose dates
+                    </button>
+                    <button type="button" class="tabs__btn ">
+                      I’m flexible
+                    </button>
+                  </div>
+                  <div class="pop-calendar__main" style="display: none;">
+                    <div class="pop-calendar__dates">
+                      Calendar
+                    </div>
+                    <div class="pop-calendar__bottom">
+                      <div class="pop-calendar__toggler toggler">
+                        <input type="checkbox" class="toggler__button" />
+                        Flexible dates
+                      </div>
+                      <div class="pop-calendar__drop calendar-drop">
+                        <div class="calendar-drop__top">
+                          <svg class="calendar-drop__top-svg">
+                            <use xlink:href="img/sprites.svg#plus-minus"></use>
+                          </svg>
+                          <span class="calendar-drop__value">2 days</span>
+                          <svg class="calendar-drop__top-arrow">
+                            <use
+                              xlink:href="img/sprites.svg#fill-arrow-down"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="calendar-drop__bottom">
+                          <ul class="calendar-drop__list">
+                            <li class="calendar-drop__item">1 day</li>
+                            <li class="calendar-drop__item">2 days</li>
+                            <li class="calendar-drop__item">3 days</li>
+                            <li class="calendar-drop__item">4 days</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pop-calendar__main">
+                    <div class="pop-calendar__block">
+                      <div class="pop-calendar__header">
+                        <h5 class="pop-calendar__head">Stay for a weekend</h5>
+                      </div>
+                      <div class="pop-calendar__buttons">
+                        <button type="button" class="pop-calendar__btn active">
+                          Weekend
+                        </button>
+                        <button type="button" class="pop-calendar__btn ">
+                          Week
+                        </button>
+                        <button type="button" class="pop-calendar__btn ">
+                          Month
+                        </button>
+                      </div>
+                    </div>
+                    <div class="pop-calendar__block">
+                      <div class="pop-calendar__header">
+                        <h5 class="pop-calendar__head">Go anytime</h5>
+                        <div class="pop-calendar__navigation">
+                          <button
+                            type="button"
+                            class="pop-calendar__nav pop-calendar__nav--prev btn btn--circle"
+                          >
+                            <svg class="pop-calendar__nav-svg">
+                              <use
+                                xlink:href="img/sprites.svg#arrow-left"
+                              ></use>
+                            </svg>
+                          </button>
+                          <button
+                            type="button"
+                            class="pop-calendar__nav pop-calendar__nav--next btn btn--circle"
+                          >
+                            <svg class="pop-calendar__nav-svg">
+                              <use
+                                xlink:href="img/sprites.svg#arrow-left"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pop-calendar__slider swiper">
+                        <div class="pop-calendar__wrapp swiper-wrapper">
+                          <div class="pop-calendar__slide active swiper-slide">
+                            <span class="pop-calendar__month">June</span>
+                            <span class="pop-calendar__year">2022</span>
+                          </div>
+                          <div class="pop-calendar__slide swiper-slide">
+                            <span class="pop-calendar__month">July</span>
+                            <span class="pop-calendar__year">2022</span>
+                          </div>
+                          <div class="pop-calendar__slide swiper-slide">
+                            <span class="pop-calendar__month">August</span>
+                            <span class="pop-calendar__year">2022</span>
+                          </div>
+                          <div class="pop-calendar__slide swiper-slide">
+                            <span class="pop-calendar__month">November</span>
+                            <span class="pop-calendar__year">2022</span>
+                          </div>
+                          <div class="pop-calendar__slide swiper-slide">
+                            <span class="pop-calendar__month">December</span>
+                            <span class="pop-calendar__year">2022</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__item search__item--long">
+              <div class="search__top">
+                <span class="search__value">Greece</span>
+              </div>
+            </div>
+            <div class="search__item">
+              <div class="search__top">
+                <span class="search__value">Greece</span>
+              </div>
+              <div class="search__guests guests select">
+                <div class="select__dropdown">
+                  <ul class="guests__list">
+                    <li class="guests__item">
+                      <div class="guests__type">
+                        <h3>Adults</h3>
+                        <span>Age 13+</span>
+                      </div>
+                      <div class="guests__buttons">
+                        <button class="guests__btn btn guests__btn--minus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#minus"></use>
+                          </svg>
+                        </button>
+                        <span class="guests__count">0</span>
+                        <button class="guests__btn btn guests__btn--plus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="guests__item">
+                      <div class="guests__type">
+                        <h3>Children</h3>
+                        <span>Ages 2–12</span>
+                      </div>
+                      <div class="guests__buttons">
+                        <button class="guests__btn btn guests__btn--minus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#minus"></use>
+                          </svg>
+                        </button>
+                        <span class="guests__count">0</span>
+                        <button class="guests__btn btn guests__btn--plus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="guests__item">
+                      <div class="guests__type">
+                        <h3>Infants</h3>
+                        <span>Under 2</span>
+                      </div>
+                      <div class="guests__buttons">
+                        <button class="guests__btn btn guests__btn--minus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#minus"></use>
+                          </svg>
+                        </button>
+                        <span class="guests__count">0</span>
+                        <button class="guests__btn btn guests__btn--plus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="guests__item">
+                      <div class="guests__type">
+                        <h3>Pets</h3>
+                        <span>Bringing a service animal?</span>
+                      </div>
+                      <div class="guests__buttons">
+                        <button class="guests__btn btn guests__btn--minus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#minus"></use>
+                          </svg>
+                        </button>
+                        <span class="guests__count">0</span>
+                        <button class="guests__btn btn guests__btn--plus">
+                          <svg class="guests__svg">
+                            <use xlink:href="img/sprites.svg#plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="search__btn btn btn--blue">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="header__right">
+        <a href="#" class="header__question">Are you a host?</a>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#notifications"></use>
+            </svg>
+          </button>
+          <!-- active - для активного состояния -->
+          <div class="header__notifications notifications">
+            <div class="notifications__wrapper">
+              <div class="notifications__top">
+                <h3 class="notifications__head">Notifications</h3>
+                <span class="notifications__count">3</span>
+              </div>
+              <div class="notifications__bottom">
+                <div class="notifications__new">
+                  <ul class="notifications__list">
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing. Add your work email
+                          to unlock extra perks for business trips, like
+                          simplified expensing. Add your work email to unlock
+                          extra perks for business trips, like simplified
+                          expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notifications__old">
+                  <h4 class="notifications__previous">
+                    Previous notifications
+                  </h4>
+                  <ul class="notifications__list">
+                    <li class="notifications__item">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__count">10</span>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#message"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Пользователь без аватарки и не зарегистрирован -->
+        <div class="header__unit" style="display: none">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#account"></use>
+            </svg>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="log-in.html" class="dropdown__link">Log In</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Register</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <div class="header__avatar">
+              <img class="img-circle" src="img/avatar.png" alt="" />
+            </div>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">My bookings</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Favorites</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Account</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+ 
+
+      <main class="main">
+        <section class="personal-cabinet">
+  <div class="personal-cabinet__inner">
+    <aside class="personal-cabinet__aside">
+      <!-- active - для активной страницы -->
+      <div class="personal-cabinet__wrapper">
+        <a href="personal-cabinet-user.html" class="personal-cabinet__user">
+          <div class="personal-cabinet__image">
+            <img class="img-circle" src="img/avatar.png" alt="" />
+          </div>
+          <div class="personal-cabinet__date">
+            <h5 class="personal-cabinet__name">Monika Williams</h5>
+            <span class="personal-cabinet__email"
+              >monika.williams@gmail.com</span
+            >
+          </div>
+        </a>
+      </div>
+      <nav class="personal-cabinet__navigation">
+  <ul class="personal-cabinet__list">
+    <li class="personal-cabinet__item active">
+      <a href="personal-cabinet-bookings.html" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#house"></use>
+          </svg>
+        </div>
+        My bookings
+      </a>
+    </li>
+    <li class="personal-cabinet__item">
+      <a href="personal-cabinet-favorites.html" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#like-fill"></use>
+          </svg>
+        </div>
+        Favorites
+      </a>
+    </li>
+    <li class="personal-cabinet__item">
+      <a href="personal-cabinet-security.html" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#login"></use>
+          </svg>
+        </div>
+        Login & security
+      </a>
+    </li>
+    <li class="personal-cabinet__item">
+      <a href="personal-cabinet-payments.html" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#payouts"></use>
+          </svg>
+        </div>
+        Payments & payouts
+      </a>
+      <button
+        class="personal-cabinet__show btn btn--circle"
+        data-link="payments"
+      >
+        <svg class="personal-cabinet__show-svg">
+          <use xlink:href="img/sprites.svg#arrow-down"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="personal-cabinet__item">
+      <a
+        href="personal-cabinet-notifications.html"
+        class="personal-cabinet__link"
+      >
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#bell"></use>
+          </svg>
+        </div>
+        Notifications
+      </a>
+      <button
+        class="personal-cabinet__show btn btn--circle"
+        data-link="notifications"
+      >
+        <svg class="personal-cabinet__show-svg">
+          <use xlink:href="img/sprites.svg#arrow-down"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="personal-cabinet__item">
+      <a href="personal-cabinet-privacy.html" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#share"></use>
+          </svg>
+        </div>
+        Privacy and sharing
+      </a>
+    </li>
+    <li class="personal-cabinet__item">
+      <a
+        href="personal-cabinet-preferences.html"
+        class="personal-cabinet__link"
+      >
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#language"></use>
+          </svg>
+        </div>
+        Global preferences
+      </a>
+    </li>
+    <li class="personal-cabinet__item">
+      <a href="personal-cabinet-tools.html" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#tools"></use>
+          </svg>
+        </div>
+        Professional hosting tools
+      </a>
+    </li>
+
+    <li class="personal-cabinet__item">
+      <a href="#" class="personal-cabinet__link">
+        <div class="personal-cabinet__circle">
+          <svg class="personal-cabinet__circle-svg">
+            <use xlink:href="img/sprites.svg#logout"></use>
+          </svg>
+        </div>
+        Log out
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="personal-cabinet__deactivate">
+        <span class="personal-cabinet__span">
+          Need to deactivate your account?
+        </span>
+        <a href="#" class="personal-cabinet__info link link--blue"
+          >Take care of that now</a
+        >
+      </div>
+    </aside>
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <div class="personal-cabinet__cabinet">
+  <div class="personal-cabinet__submenu personal-submenu">
+  <div class="personal-submenu__wrapper">
+    <div class="personal-submenu__top">
+      <div class="personal-submenu__hide">
+        <button
+          class="personal-submenu__arrow btn btn--circle"
+          data-button="notifications"
+        >
+          <svg class="personal-submenu__arrow-svg">
+            <use xlink:href="img/sprites.svg#arrow-down"></use>
+          </svg>
+        </button>
+        Notifications
+      </div>
+    </div>
+    <nav class="personal-cabinet__navigation">
+      <div class="personal-cabinet__block">
+        <h5 class="personal-cabinet__head">Offers and updates</h5>
+        <ul class="personal-cabinet__list">
+          <li class="personal-cabinet__item active">
+            <a
+              href="personal-cabinet-notifications.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#insights"></use>
+                </svg>
+              </div>
+              Hosting insights and rewards
+            </a>
+          </li>
+          <li class="personal-cabinet__item">
+            <a
+              href="personal-cabinet-updates.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#update"></use>
+                </svg>
+              </div>
+              Hosting updates
+            </a>
+          </li>
+          <li class="personal-cabinet__item">
+            <a
+              href="personal-cabinet-offers.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#tips"></use>
+                </svg>
+              </div>
+              Travel tips and offers
+            </a>
+          </li>
+          <li class="personal-cabinet__item">
+            <a
+              href="personal-cabinet-funduq.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#logo"></use>
+                </svg>
+              </div>
+              Funduq updates
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="personal-cabinet__block">
+        <h5 class="personal-cabinet__head">Account</h5>
+        <ul class="personal-cabinet__list">
+          <li class="personal-cabinet__item">
+            <a
+              href="personal-cabinet-policies.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#policy"></use>
+                </svg>
+              </div>
+              Account activity and policies
+            </a>
+          </li>
+          <li class="personal-cabinet__item">
+            <a
+              href="personal-cabinet-reminders.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#notifications"></use>
+                </svg>
+              </div>
+              Reminders
+            </a>
+          </li>
+          <li class="personal-cabinet__item">
+            <a
+              href="personal-cabinet-messages.html"
+              class="personal-cabinet__link"
+            >
+              <div class="personal-cabinet__circle">
+                <svg class="personal-cabinet__circle-svg">
+                  <use xlink:href="img/sprites.svg#message"></use>
+                </svg>
+              </div>
+              Guest and Host messages
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="personal-cabinet__checkbox checkbox">
+        <input
+          type="checkbox"
+          class="checkbox__input"
+          id="accept"
+          name="accept"
+        />
+        <label for="accept" class="checkbox__label"></label>
+        <p class="personal-cabinet__text">
+          Unsubscribe from all marketing emails
+        </p>
+      </div>
+    </nav>
+  </div>
+</div>
+
+  <div class="personal-cabinet__content notifications-settings">
+    <div class="personal-cabinet__top">
+      <div class="personal-cabinet__container">
+        <h1 class="personal-cabinet__title">Hosting updates</h1>
+        <p class="personal-cabinet__description">
+          Get up-to-date information about programs, features and policies.
+        </p>
+      </div>
+    </div>
+    <div class="notifications-settings__content">
+      <div class="notifications-settings__wrapper">
+        <div class="notifications-settings__block">
+          <h5 class="notifications-settings__head">News and updates</h5>
+          <ul class="notifications-settings__togglers">
+            <li class="notifications-settings__toggler toggler">
+              <input type="checkbox" class="toggler__button" />
+              <div class="toggler__group">
+                <span class="toggler__head">E-mail</span>
+              </div>
+            </li>
+            <li class="notifications-settings__toggler toggler">
+              <input type="checkbox" class="toggler__button" />
+              <div class="toggler__group">
+                <span class="toggler__head">Browser notifications</span>
+              </div>
+            </li>
+            <li class="notifications-settings__toggler toggler">
+              <input type="checkbox" class="toggler__button" checked />
+              <div class="toggler__group">
+                <span class="toggler__head">SMS</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="notifications-settings__block">
+          <h5 class="notifications-settings__head">
+            Local laws and regulations
+          </h5>
+          <ul class="notifications-settings__togglers">
+            <li class="notifications-settings__toggler toggler">
+              <input type="checkbox" class="toggler__button" />
+              <div class="toggler__group">
+                <span class="toggler__head">E-mail</span>
+              </div>
+            </li>
+            <li class="notifications-settings__toggler toggler">
+              <input type="checkbox" class="toggler__button" />
+              <div class="toggler__group">
+                <span class="toggler__head">Browser notifications</span>
+              </div>
+            </li>
+            <li class="notifications-settings__toggler toggler">
+              <input type="checkbox" class="toggler__button" checked />
+              <div class="toggler__group">
+                <span class="toggler__head">SMS</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__cop">© 2022 Company’s name</span>
+    </div>
+    <div class="footer__center">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            Support & resources
+            <svg class="footer__link-arrow">
+              <use xlink:href="img/sprites.svg#arrow-down"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link">$ USD</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="js/accordion.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>

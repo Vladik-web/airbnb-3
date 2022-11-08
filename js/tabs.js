@@ -1,0 +1,1 @@
+const tabs=document.querySelectorAll(".tabs__btn"),contents=document.querySelectorAll(".tabs__content");tabs.forEach((t=>{t.addEventListener("click",(e=>{tabs.forEach((t=>t.classList.remove("active"))),t.classList.add("active"),contents.forEach((t=>{e.target.dataset.tab==t.dataset.content&&(contents.forEach((t=>t.classList.remove("active"))),t.classList.add("active"))}))}))}));

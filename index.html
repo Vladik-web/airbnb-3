@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Главная</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      
+<header class="header ">
+  <div class="container">
+    <!-- header__inner--nomenu - если нет меню -->
+    <div class="header__inner header__inner--nomenu">
+      <div class="header__left">
+        <a href="/index.html" class="header__logo">Logo</a>
+      </div>
+
+      <div class="header__right">
+        <a href="#" class="header__question">Are you a host?</a>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#notifications"></use>
+            </svg>
+          </button>
+          <!-- active - для активного состояния -->
+          <div class="header__notifications notifications">
+            <div class="notifications__wrapper">
+              <div class="notifications__top">
+                <h3 class="notifications__head">Notifications</h3>
+                <span class="notifications__count">3</span>
+              </div>
+              <div class="notifications__bottom">
+                <div class="notifications__new">
+                  <ul class="notifications__list">
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing. Add your work email
+                          to unlock extra perks for business trips, like
+                          simplified expensing. Add your work email to unlock
+                          extra perks for business trips, like simplified
+                          expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="notifications__item notifications__item--new">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="notifications__old">
+                  <h4 class="notifications__previous">
+                    Previous notifications
+                  </h4>
+                  <ul class="notifications__list">
+                    <li class="notifications__item">
+                      <div class="notifications__text">
+                        <p>
+                          Add your work email to unlock extra perks for business
+                          trips, like simplified expensing.
+                        </p>
+                        <time>May 10, 2022</time>
+                      </div>
+                      <button class="notifications__close btn">
+                        <svg class="notifications__svg">
+                          <use xlink:href="img/sprites.svg#cross"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="header__count">10</span>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#message"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Пользователь без аватарки и не зарегистрирован -->
+        <div class="header__unit" style="display: none">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <svg class="header__btn-svg">
+              <use xlink:href="img/sprites.svg#account"></use>
+            </svg>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="log-in.html" class="dropdown__link">Log In</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Register</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__unit">
+          <!-- active - для активного состояния -->
+          <button class="header__btn header__account btn btn--circle">
+            <div class="header__avatar">
+              <img class="img-circle" src="img/avatar.png" alt="" />
+            </div>
+          </button>
+          <div class="header__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">My bookings</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Favorites</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Account</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Support</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  
+
+
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__inner">
+              <!-- <div class="hero__image">
+                <img src="img/hero.png" alt="" />
+              </div> -->
+              <div class="hero__form">
+                <h2 class="hero__title title">
+                  Vacation rental <br />
+                  in Dubai
+                </h2>
+                <p class="hero__subtitle">
+                  Find and book unique accommodation on our service
+                </p>
+                <form class="form">
+                  <div class="form__field">
+                    <!-- active - для открытия списка активации-->
+                    <!-- select--chosen - вешается, когда выбрана локация -->
+                    <div class="hero__select select ">
+                      <div class="select__toggle">
+                        <div class="select__field">
+                          <span class="select__text">Location</span>
+                        </div>
+                        <svg class="select__svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </div>
+                      <div class="select__dropdown">
+                        <div class="select__result">
+                          <ul class="select__options">
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="select__recent">
+                          <h3 class="select__title">Recent research</h3>
+                          <ul class="select__options">
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__field form__field--two">
+                    <!-- active - для активации поля в режим ввода -->
+                    <label class="form__label active">
+                      <span class="form__span">Check in date</span>
+                      <input
+                        type="text"
+                        class="form__input"
+                        value="lorem 123"
+                      />
+                    </label>
+                    <!-- active - для активации поля в режим ввода -->
+                    <label class="form__label">
+                      <span class="form__span">Check out date</span>
+                      <input type="text" class="form__input" />
+                    </label>
+                  </div>
+                  <div class="form__field">
+                    <div class="hero__select select">
+                      <div class="select__toggle">
+                        <div class="select__field">
+                          <span class="select__text">Guests</span>
+                        </div>
+                        <svg class="select__svg">
+                          <use xlink:href="img/sprites.svg#arrow-down"></use>
+                        </svg>
+                      </div>
+                      <div class="select__dropdown">
+                        <div class="select__result">
+                          <ul class="select__options">
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="select__recent">
+                          <h3 class="select__title">Recent research</h3>
+                          <ul class="select__options">
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                            <li class="select__item">
+                              <span class="select__option">Greece</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="form__btn btn btn--blue">SEARCH</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="places">
+          <div class="container">
+            <div class="places__inner">
+              <h2 class="places__title title">Choose your place to stay</h2>
+              <ul class="places__list">
+                <li class="places__item">
+                  <a href="#" class="places__link">
+                    <div class="places__image">
+                      <img
+                        class="img-circle"
+                        src="img/places/photo.jpg"
+                        alt="photo.jpg"
+                      />
+                    </div>
+                    <h4 class="places__head">Camping</h4>
+                    <p class="places__count"><output>200 000 </output> homes</p>
+                  </a>
+                </li>
+                <li class="places__item">
+                  <a href="#" class="places__link">
+                    <div class="places__image">
+                      <img
+                        class="img-circle"
+                        src="img/places/photo.jpg"
+                        alt="photo.jpg"
+                      />
+                    </div>
+                    <h4 class="places__head">Surfing</h4>
+                    <p class="places__count"><output>200 000 </output> homes</p>
+                  </a>
+                </li>
+                <li class="places__item">
+                  <a href="#" class="places__link">
+                    <div class="places__image">
+                      <img
+                        class="img-circle"
+                        src="img/places/photo.jpg"
+                        alt="photo.jpg"
+                      />
+                    </div>
+                    <h4 class="places__head">National Parks</h4>
+                    <p class="places__count"><output>200 000 </output> homes</p>
+                  </a>
+                </li>
+                <li class="places__item">
+                  <a href="#" class="places__link">
+                    <div class="places__image">
+                      <img
+                        class="img-circle"
+                        src="img/places/photo.jpg"
+                        alt="photo.jpg"
+                      />
+                    </div>
+                    <h4 class="places__head">Desert</h4>
+                    <p class="places__count"><output>200 000 </output> homes</p>
+                  </a>
+                </li>
+                <li class="places__item">
+                  <a href="#" class="places__link">
+                    <div class="places__image">
+                      <img
+                        class="img-circle"
+                        src="img/places/photo.jpg"
+                        alt="photo.jpg"
+                      />
+                    </div>
+                    <h4 class="places__head">Countryside</h4>
+                    <p class="places__count"><output>200 000 </output> homes</p>
+                  </a>
+                </li>
+                <li class="places__item">
+                  <a href="#" class="places__link">
+                    <div class="places__image">
+                      <img
+                        class="img-circle"
+                        src="img/places/photo.jpg"
+                        alt="photo.jpg"
+                      />
+                    </div>
+                    <h4 class="places__head">Pool</h4>
+                    <p class="places__count"><output>200 000 </output> homes</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="places__blocks">
+                <div class="places__block">
+                  <div class="places__background">
+                    <img
+                      src="img/places/block-photo-1.jpg"
+                      alt="block-photo-1.jpg"
+                    />
+                  </div>
+                  <div class="places__content">
+                    <div class="places__content-top">
+                      <h2 class="places__heading title">
+                        Check out available properies
+                      </h2>
+                      <div class="places__location location">
+                        <svg class="location__svg">
+                          <use xlink:href="img/sprites.svg#point"></use>
+                        </svg>
+                        <p class="location__text">United Arab Emirates</p>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn--transparent">Show map</a>
+                  </div>
+                </div>
+                <div class="places__block">
+                  <div class="places__background">
+                    <img
+                      src="img/places/block-photo-2.jpg"
+                      alt="block-photo-2.jpg"
+                    />
+                  </div>
+                  <div class="places__content">
+                    <div class="places__content-top">
+                      <h2 class="places__heading title">Going on vacation?</h2>
+                    </div>
+                    <a href="" class="btn btn--blue btn--middle">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="container">
+            <div class="benefits__inner">
+              <h2 class="benefits__title title">Benefits of our platform</h2>
+              <div class="benefits__accordion accordion">
+                <ul class="benefits__list accordion-list">
+                  <li class="benefits__item accordion-item">
+                    <div class="benefits__top accordion-top">
+                      <span class="benefits__number">01</span>
+                      <div class="benefits__content">
+                        <div class="benefits__left">
+                          <h2 class="benefits__head title">Favorable prices</h2>
+                          <div class="benefits__description">
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have suffered
+                              alteration in some form, by injected humour, or
+                              randomised words which don't look even slightly
+                              believable. There are many variations of passages
+                              of Lorem Ipsum available, but the majority have
+                              suffered alteration in some form, by injected
+                              humour, or randomised words which don't look even
+                              slightly believable.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="benefits__image">
+                          <img src="img/accordion.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="benefits__btn accordion-btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefits__item accordion-item">
+                    <div class="benefits__top accordion-top">
+                      <span class="benefits__number">02</span>
+                      <div class="benefits__content">
+                        <div class="benefits__left">
+                          <h2 class="benefits__head title">Best places</h2>
+                          <div class="benefits__description">
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have suffered
+                              alteration in some form, by injected humour, or
+                              randomised words which don't look even slightly
+                              believable. There are many variations of passages
+                              of Lorem Ipsum available, but the majority have
+                              suffered alteration in some form, by injected
+                              humour, or randomised words which don't look even
+                              slightly believable.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="benefits__image">
+                          <img src="img/accordion.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="benefits__btn accordion-btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefits__item accordion-item">
+                    <div class="benefits__top accordion-top">
+                      <span class="benefits__number">03</span>
+                      <div class="benefits__content">
+                        <div class="benefits__left">
+                          <h2 class="benefits__head title">
+                            Convenient search
+                          </h2>
+                          <div class="benefits__description">
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have suffered
+                              alteration in some form, by injected humour, or
+                              randomised words which don't look even slightly
+                              believable. There are many variations of passages
+                              of Lorem Ipsum available, but the majority have
+                              suffered alteration in some form, by injected
+                              humour, or randomised words which don't look even
+                              slightly believable.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="benefits__image">
+                          <img src="img/accordion.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="benefits__btn accordion-btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="benefits__item accordion-item">
+                    <div class="benefits__top accordion-top">
+                      <span class="benefits__number">04</span>
+                      <div class="benefits__content">
+                        <div class="benefits__left">
+                          <h2 class="benefits__head title">
+                            Quality Assuarance
+                          </h2>
+                          <div class="benefits__description">
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have suffered
+                              alteration in some form, by injected humour, or
+                              randomised words which don't look even slightly
+                              believable. There are many variations of passages
+                              of Lorem Ipsum available, but the majority have
+                              suffered alteration in some form, by injected
+                              humour, or randomised words which don't look even
+                              slightly believable.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="benefits__image">
+                          <img src="img/accordion.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="benefits__btn accordion-btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq">
+  <div class="container">
+    <div class="faq__inner">
+      <h2 class="faq__title title">FAQ</h2>
+      <div class="faq__accordion accordion">
+        <ul class="faq__list accordion-list">
+          <li class="faq__item accordion-item">
+            <div class="faq__top accordion-top">
+              <h2 class="faq__head">How we work?</h2>
+              <div class="faq__btn btn btn--circle accordion-btn">
+                <svg class="faq__svg">
+                  <use xlink:href="img/sprites.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="faq__bottom accordion-bottom">
+              <div class="faq__description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item accordion-item">
+            <div class="faq__top accordion-top">
+              <h2 class="faq__head">How we work?</h2>
+              <div class="faq__btn btn btn--circle accordion-btn">
+                <svg class="faq__svg">
+                  <use xlink:href="img/sprites.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="faq__bottom accordion-bottom">
+              <div class="faq__description">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__cop">© 2022 Company’s name</span>
+    </div>
+    <div class="footer__center">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            Support & resources
+            <svg class="footer__link-arrow">
+              <use xlink:href="img/sprites.svg#arrow-down"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link">$ USD</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link btn btn--circle">
+              <svg class="social__link-svg">
+                <use xlink:href="img/sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <nav class="fixed-navigation">
+  <ul>
+    <li>
+      <a href="testing-headers-page.html">Headers</a>
+    </li>
+    <li>
+      <a href="index.html">Main</a>
+    </li>
+    <li>
+      <a href="map-page.html">Map Page</a>
+    </li>
+    <li>
+      <a href="property-page.html">Property page</a>
+    </li>
+    <li>
+      <a href="confirm-and-pay.html">Confirm and pay</a>
+    </li>
+    <li>
+      <a href="thank-for-booking.html">Thanks for Booking</a>
+    </li>
+    <li>
+      <a href="messenger.html">Messenger</a>
+    </li>
+    <li>
+      <a href="log-in.html">Login</a>
+    </li>
+    <li>
+      <a href="sign-up.html">Register</a>
+    </li>
+    <li>
+      <a href="support.html">Support</a>
+    </li>
+    <li>
+      <a href="support-section.html">Support - section</a>
+    </li>
+    <li>
+      <a href="support-item.html">Support - item</a>
+    </li>
+    <li>
+      <a href="support-item-content.html">Support - item content</a>
+    </li>
+    <li>
+      <a href="personal-cabinet-user.html">Personal Cabinet</a>
+    </li>
+    <li>
+      <a href="cabinet-host-dashboard.html">Personal Cabinet for Host</a>
+    </li>
+    <li>
+      <a href="404.html">404</a>
+    </li>
+    <li>
+      <a href="websites.html">Websites</a>
+    </li>
+    <li>
+      <a href="template-1.html">Template-1</a>
+    </li>
+    <li>
+      <a href="template-2.html">Template-2</a>
+    </li>
+    <li>
+      <a href="template-3.html">Template-3</a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+    <script src="js/accordion.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/input.js"></script>
+  </body>
+</html>

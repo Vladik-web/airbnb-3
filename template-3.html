@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.min.css" />
+<title>Template-3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="temp-3-header">
+        <div class="container container--template">
+          <div class="temp-3-header__inner">
+            <a href="#" class="temp-3-header__logo">
+              LOGO
+            </a>
+            <nav class="temp-3-header__nav">
+              <ul class="temp-3-header__list">
+                <li class="temp-3-header__item">
+                  <a href="#" class="temp-3-header__link">APARTMENTS</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="temp-3-hero">
+          <div class="container container--template">
+            <div class="temp-3-hero__inner">
+              <div class="temp-3-hero__background">
+                <img src="img/template-3/hero.jpg" alt="" />
+              </div>
+              <div class="temp-3-hero__content">
+                <h1 class="temp-3-hero__title">Sezavi Holiday Home</h1>
+                <div class="temp-3-hero__search search">
+                  <div class="search__wrapper">
+                    <form class="search__form form">
+                      <div class="search__item" id="place">
+                        <div class="search__top">
+                          <span class="search__value">City</span>
+                        </div>
+                        <div class="search__bottom dropdown ">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Greece</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">
+                                Thessaloniki, Greece
+                              </span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link"
+                                >Mikonos, Greece</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="search__item" id="type">
+                        <div class="search__top">
+                          <span class="search__value">Type</span>
+                          <div class="search__arrow">
+                            <svg class="search__arrow-svg">
+                              <use
+                                xlink:href="img/sprites.svg#arrow-down"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="search__bottom dropdown">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Apartment</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Flat</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Loft</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Room</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Studio</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Townhouse</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__link">Villa</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="search__item" id="check-id">
+                        <div class="search__top">
+                          <span class="search__value">Check-in</span>
+                        </div>
+                        <div class="search__bottom dropdown"></div>
+                      </div>
+                      <div class="search__item" id="check-out">
+                        <div class="search__top">
+                          <span class="search__value">Check-out</span>
+                        </div>
+                        <div class="search__bottom dropdown"></div>
+                      </div>
+                      <div class="search__item" id="guests">
+                        <div class="search__top">
+                          <span class="search__value">Guests</span>
+                        </div>
+                        <div class="search__guests guests select">
+                          <div class="select__dropdown">
+                            <ul class="guests__list">
+                              <li class="guests__item">
+                                <div class="guests__type">
+                                  <h3>Adults</h3>
+                                  <span>Age 13+</span>
+                                </div>
+                                <div class="guests__buttons">
+                                  <button
+                                    class="guests__btn btn guests__btn--minus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#minus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                  <span class="guests__count">0</span>
+                                  <button
+                                    class="guests__btn btn guests__btn--plus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#plus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="guests__item">
+                                <div class="guests__type">
+                                  <h3>Children</h3>
+                                  <span>Ages 2–12</span>
+                                </div>
+                                <div class="guests__buttons">
+                                  <button
+                                    class="guests__btn btn guests__btn--minus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#minus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                  <span class="guests__count">0</span>
+                                  <button
+                                    class="guests__btn btn guests__btn--plus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#plus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="guests__item">
+                                <div class="guests__type">
+                                  <h3>Infants</h3>
+                                  <span>Under 2</span>
+                                </div>
+                                <div class="guests__buttons">
+                                  <button
+                                    class="guests__btn btn guests__btn--minus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#minus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                  <span class="guests__count">0</span>
+                                  <button
+                                    class="guests__btn btn guests__btn--plus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#plus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="guests__item">
+                                <div class="guests__type">
+                                  <h3>Pets</h3>
+                                  <span>Bringing a service animal?</span>
+                                </div>
+                                <div class="guests__buttons">
+                                  <button
+                                    class="guests__btn btn guests__btn--minus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#minus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                  <span class="guests__count">0</span>
+                                  <button
+                                    class="guests__btn btn guests__btn--plus"
+                                  >
+                                    <svg class="guests__svg">
+                                      <use
+                                        xlink:href="img/sprites.svg#plus"
+                                      ></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="search__container">
+                        <button class="search__btn btn btn--blue">
+                          SEARCH
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="temp-3-block" data-animation-block>
+          <div class="container container--template">
+            <div class="temp-3-block__inner">
+              <div class="temp-3-block__left">
+                <h2 class="temp-3-block__title temp-3-title">
+                  Stay with us, <br />
+                  the home is yours
+                </h2>
+                <div class="temp-3-block__description temp-3-description">
+                  <p>
+                    Are you planning a family vacation or preparing a breakaway
+                    trip with your friends? We will be happy to help organize
+                    everything for your arrival, from a warm welcome at the
+                    airport, to rent a beautiful, modern villa with a swimming
+                    pool. Luxurious villas and apartments will give true
+                    pleasure and first-class comfort for the most demanding
+                    guests.
+                  </p>
+                </div>
+              </div>
+              <div class="temp-3-block__right">
+                <div class="temp-3-block__image">
+                  <img
+                    data-animation-image
+                    src="img/template-3/text-block-image.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="temp-3-about" data-animation-block>
+          <div class="container container--template">
+            <div class="temp-3-about__inner">
+              <div class="temp-3-about__background">
+                <img src="img/template-3/about.jpg" alt="" />
+              </div>
+              <div class="temp-3-about__content">
+                <h2 class="temp-3-about__title temp-3-title">
+                  About Sezavi <br />
+                  Holiday Home
+                </h2>
+                <div class="temp-3-about__description temp-3-description">
+                  <p>
+                    I am the Director of Sezavi. We have staff of more than 25
+                    people, so the Director role requires me to work closely
+                    with an experienced senior management team as we implement
+                    the strategic plan for the business. With over 12 years of
+                    experience at Sezavi, and 18 years in the property industry,
+                    I have in-depth knowledge of how the business works. This
+                    experience helps to make the accommodation for our clients
+                    comfortable and cozy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="temp-3-benefits">
+          <div class="container container--template">
+            <div class="temp-3-benefits__inner">
+              <div
+                class="temp-3-benefits__item temp-3-item"
+                data-animation-block
+              >
+                <div class="temp-3-item__image">
+                  <img
+                    data-animation-image
+                    src="img/template-3/benefits-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="temp-3-item__content">
+                  <h3 class="temp-3-item__head temp-3-head">
+                    Staff with experience
+                  </h3>
+                  <div class="temp-3-item__description temp-3-description">
+                    <p>
+                      Our task is to organize your vacation as accurately as
+                      possible, not only to the accommodation, also to other
+                      additional wishes: organizing transport, excursions,
+                      daytime and evening entertainment. Luxurious villas and
+                      apartments will give true pleasure and first-class
+                      comfort.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="temp-3-benefits__item temp-3-item"
+                data-animation-block
+              >
+                <div class="temp-3-item__image">
+                  <img
+                    data-animation-image
+                    src="img/template-3/benefits-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="temp-3-item__content">
+                  <h3 class="temp-3-item__head temp-3-head">
+                    Well-selected <br />
+                    and secure homes
+                  </h3>
+                  <div class="temp-3-item__description temp-3-description">
+                    <p>
+                      We make a promise to landlords who choose to use us for
+                      property management. Our dedicated qualified Property
+                      Managers have been carefully selected and are highly
+                      regarded by both our clients and tenants.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="temp-3-benefits__item temp-3-item"
+                data-animation-block
+              >
+                <div class="temp-3-item__image">
+                  <img
+                    data-animation-image
+                    src="img/template-3/benefits-3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="temp-3-item__content">
+                  <h3 class="temp-3-item__head temp-3-head">
+                    Flexible, effective and transparent
+                  </h3>
+                  <div class="temp-3-item__description temp-3-description">
+                    <p>
+                      We are based in Dubai Marina, but the rental properties we
+                      manage are located right across Dubai, Palm Jumeirah and
+                      beyond. In addition, we can manage portfolios of all
+                      sizes, from just a handful of units to over a hundred.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="temp-3-location" data-animation-block>
+          <div class="container container--template">
+            <div class="temp-3-location__inner">
+              <div class="temp-3-location__left">
+                <h2 class="temp-3-location__title temp-3-title">
+                  Explore Dubai <br />
+                  in a unique way
+                </h2>
+                <div class="temp-3-location__description temp-3-description">
+                  <p>
+                    Palm Jumeirah is the largest man-made island on the coast of
+                    the Persian Gulf in Dubai. The island looks like a palm tree
+                    stretched out into the sea and consists of a trunk, 16
+                    leaves and an 11-kilometer crescent. The resort is dotted
+                    with luxurious villas with private bays, gardens and
+                    swimming pools. Palm Jumeirah is famous for its world-class
+                    attractions and abounds in luxurious restaurants and
+                    entertainment: Dolphin Bay, Aquaventure Water Park,
+                    aquariums, aquatic centers and fountains, as well as the
+                    legendary Atlantis hotels, observation decks and promenades.
+                  </p>
+                </div>
+              </div>
+              <div class="temp-3-location__right">
+                <div class="temp-3-location__image">
+                  <img
+                    data-animation-image
+                    src="img/template-3/location.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="temp-3-offer" data-animation-block>
+          <div class="container container--template">
+            <div class="temp-3-offer__inner">
+              <h2 class="temp-3-offer__title temp-3-title">
+                Featured villas & apartments
+              </h2>
+              <ul class="temp-3-offer__list">
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/2.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/3.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/4.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/5.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/6.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/7.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/8.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="temp-3-offer__card temp-3-card">
+                  <div class="temp-3-card__top">
+                    <div class="temp-3-card__image">
+                      <img src="img/template-3/offers/9.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="temp-3-card__bottom">
+                    <div class="temp-3-card__title">White Palm Villa</div>
+                    <div class="temp-3-card__info">
+                      <ul class="temp-3-card__equipment">
+                        <li class="temp-3-card__item">3 Beds,</li>
+                        <li class="temp-3-card__item">1 Bath,</li>
+                        <li class="temp-3-card__item">4 Guests</li>
+                      </ul>
+                      <div class="temp-3-card__price">
+                        <strong class="temp-3-card__numbers">£1,655</strong>
+                        <span class="temp-3-card__time">per night</span>
+                      </div>
+                      <a href="#" class="temp-3-card__btn temp-3-btn"
+                        >RESERVE</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="temp-3-offer__more temp-3-btn"
+                >ALL APARTMENTS</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer temp-3-footer">
+        <div class="container container--template">
+          <div class="temp-3-footer__inner">
+            <p class="temp-3-footer__place">
+              Office 2002, The One Tower 943 Sheikh Zayed Road, Dubai
+            </p>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link btn btn--circle">
+                    <svg class="social__link-svg">
+                      <use xlink:href="img/sprites.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link btn btn--circle">
+                    <svg class="social__link-svg">
+                      <use xlink:href="img/sprites.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="temp-3-footer__cop">
+              2022 © Sezavi Holiday Home – All rights reserved
+            </div>
+            <a href="tel:4100000000" class="temp-3-footer__phone"
+              >+41 000 000 00</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <script src="js/animation/template-3.js"></script>
+    <script src="js/search-form.js"></script>
+  </body>
+</html>
